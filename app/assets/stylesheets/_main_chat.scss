@@ -1,0 +1,92 @@
+$mainColor: #999999;
+$mainBtnColor: #38aef0;
+.main {
+  width: calc(100vw - 300px);
+  float: right;
+  &__header {
+    height: 99px;
+    padding: 0 40px;
+    display: flex;
+    border-bottom: solid 1px #eeeeee;
+    &__box {
+      margin-top: 35px;
+      &__group {
+        font-size: 20px;
+        color: #333333;
+      }
+      &__member {
+        padding-top: 15px;
+        font-size: 12px;
+        color: $mainColor;
+      }
+    }
+    &__btn {
+      height: 38px;
+      line-height: 40px;
+      padding: 0 20px;
+      margin-top: 28px;
+      border: solid 1px $mainBtnColor;
+      position: absolute;
+      right: 40px;
+      &--link{
+          color: $mainBtnColor;
+          text-decoration: none;
+      }
+    }
+  }
+  &__contents {
+    background-color: #fafafa;
+    padding-left: 40px;
+    height: calc(100vh - 100px - 90px);
+    &__box {
+      padding-top: 46px;
+      display: flex;
+      &__name {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      &__date {
+        padding-left: 10px;
+        font-size: 12px;
+        color: $mainColor;
+      }
+    }
+    &__message {
+      padding-top: 10px;
+      font-size: 14px;
+      color: #434A54;
+    }
+  }
+  &__form {
+    background-color: #ddd;
+    bottom: 0;
+    padding: 20px 40px;
+    display: flex;
+    &__input {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      &--text {
+        padding: 0 10px;
+        width: 100%;
+        height: 50px;
+      }
+      &--label {
+        position: absolute;
+        top: 10px;
+        right: 60px
+      }
+      &--file {
+        display: none;
+      }
+      &--submit {
+        height: 50px;
+        width: 100px;
+        background-color: $mainBtnColor;
+        color: white;
+        margin-left: 15px;
+      }
+     }
+    }
+  }

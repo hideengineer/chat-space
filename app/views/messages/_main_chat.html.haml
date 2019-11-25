@@ -1,0 +1,26 @@
+.main
+  .main__header
+    .main__header__box
+      .main__header__box__group
+        group name
+      .main__header__box__member
+        Member
+    .main__header__btn
+      = link_to "Edit", "#", class: "main__header__btn--link"
+  .main__contents
+    .main__contents__box
+      .main__contents__box__name
+        hide
+      .main__contents__box__date
+        2019/11/25/00:00:00
+    .main__contents__message
+      first message
+  .main__form
+    .main__form__input
+      %input{type: "text", placeholder: "new message", class: "main__form__input--text"}
+      %label{class: "main__form__input--label"}
+        = icon('fas', 'image', class: "main__form__input--label")
+        %input{type: "file", class: "main__form__input--file"}
+      %input{type: "submit", value: "Send", class: "main__form__input--submit"}
+
+

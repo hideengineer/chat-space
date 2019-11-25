@@ -1,0 +1,49 @@
+.side {
+  width: 300px;
+  color: #FFFFFF;
+  &__header {
+    background-color: #253141;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    color: #FFFFFF;
+    list-style: none;
+    line-height: 100px;
+    &__name{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+    }
+    &__btn{
+      margin: 0 auto;
+      &--icon{
+        color: #FFFFFF;
+       }
+      }
+    }
+  }
+  .side__contents {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    width: 300px;
+    padding: 20px 20px 20px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: left;
+    &__content{
+
+    }
+      &__name{
+        font-size: 15px;
+      }
+      &__message{
+        font-size: 11px;
+        padding-bottom: 40px;
+      }
+    }
+
