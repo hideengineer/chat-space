@@ -1,18 +1,20 @@
 .side
    .side__header
       .side__header__name
-         aaa
+         = current_user.name
       .side__header__btn
-      = link_to "#", class: "side__header__btn--edit" do
+      = link_to new_group_path,class: "side__header__btn" do
          = icon('fas', 'edit', class: "side__header__btn--icon")
   
-      = link_to "#", class: "side__header__btn--cog" do
+      = link_to edit_user_path(current_user),class: "side__header__btn" do
          = icon('fas', 'cog', class: "side__header__btn--icon")
 
    
 .side__contents
-   .side__content
-      .side__content__name
-         sample
-      .side__content__message
-         message
+   - current_user.groups.each do |group|
+      .side__contents__box
+         = link_to group_messages_path(group) do
+            .side__contents__box__name
+               = group.name
+            .side__contents__box__message
+               message

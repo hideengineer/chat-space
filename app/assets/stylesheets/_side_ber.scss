@@ -25,7 +25,7 @@
        }
       }
     }
-  }
+}
   .side__contents {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
@@ -35,15 +35,18 @@
     color: #FFFFFF;
     font-weight: bold;
     text-align: left;
-    &__content{
-
-    }
+    &__box{
       &__name{
+        color: white;
         font-size: 15px;
+        display: block;
       }
       &__message{
+        color: white;
         font-size: 11px;
         padding-bottom: 40px;
-      }
+        }
     }
+  }
+  
 
