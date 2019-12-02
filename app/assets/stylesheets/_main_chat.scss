@@ -35,6 +35,7 @@ $mainBtnColor: #38aef0;
     }
   }
   &__contents {
+    overflow: scroll;
     background-color: #fafafa;
     padding-left: 40px;
     height: calc(100vh - 100px - 90px);
