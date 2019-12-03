@@ -1,10 +1,11 @@
-.main__contents__box
-  .main__contents__box__name
-    = message.user.name
-  .main__contents__box__date
-    = message.created_at.strftime("%Y/%m/%d %H:%M")
-.main__contents__message
-  - if message.content.present?
-    = message.content
-  = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
+.message{"data-message-id": "#{message.id}"}
+  .main__contents__box
+    .main__contents__box__name
+      = message.user.name
+    .main__contents__box__date
+      = message.created_at.strftime("%Y/%m/%d %H:%M")
+  .main__contents__message
+    - if message.content.present?
+      = message.content
+    = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
   
