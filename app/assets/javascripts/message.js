@@ -38,6 +38,7 @@ $(function() {
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
+      $('.main__form__input--submit').prop('disabled', false);
     })
   })
   $(function() {
